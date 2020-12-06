@@ -1,0 +1,16 @@
+{
+  "name": "royalairtable",
+  "version": "0.0.1",
+  "dependencies": {
+    "airtable": "^0.10.1",
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  },
+  "engines": {
+    "node": "12.18.2",
+    "npm": "6.14.5"
+  }
+}
