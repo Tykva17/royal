@@ -13,7 +13,7 @@ app.use(cors())
 app.use(bodyParser.json());
 
 
-app.get('/', (req, res) => {
+app.get('/',cors, (req, res) => {
     res.send({status:"ok"})
 })
 
@@ -27,7 +27,7 @@ app.post('/', (req, res) => {
 
     let {username, phone, date , time, party  } = req.body;
 
-    base('Imported table').create([
+    base('Table 1').create([
             {
                 "fields": {
                     "username": username,
