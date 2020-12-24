@@ -13,12 +13,12 @@ app.use(cors())
 app.use(bodyParser.json());
 
 
-app.get('/',cors, (req, res) => {
+app.get('/',cors(), (req, res) => {
     res.send({status:"ok"})
 })
 
 
-app.post('/',cors, (req, res) => {
+app.post('/',cors(), (req, res) => {
     Airtable.configure({
         endpointUrl: 'https://api.airtable.com',
         apiKey: 'keyTYKG2JLkdJEBOq'
