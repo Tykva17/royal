@@ -18,7 +18,7 @@ app.get('/',cors, (req, res) => {
 })
 
 
-app.post('/', (req, res) => {
+app.post('/',cors, (req, res) => {
     Airtable.configure({
         endpointUrl: 'https://api.airtable.com',
         apiKey: 'keyTYKG2JLkdJEBOq'
